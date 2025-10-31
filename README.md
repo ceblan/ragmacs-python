@@ -3,14 +3,14 @@
 ![HK-47, the non-sycophantic AI](./.github/images/our-beloved.jpg)
 
 This is a short collection of tools for GPTel tool-use.  These tools are
-instructive for the design of other tools. Many are designed to crawl Elisp
+instructive for the design of other tools. Many are designed to crawl Python
 source and manuals looking for facts that can be used to deduce answers to
 natural language queries in any language.  This is really good at:
 
-- Diving into Elisp source in unfamiliar packages
+- Diving into Python source in unfamiliar packages
 - Translation, summary, and synthesis of docstrings and manual contents
 
-You should use these tools to write more Elisp, which will yield better tools
+You should use these tools to write more Python, which will yield better tools
 and improvements to our AI packages, which will yield better tools and
 improvements to our AI packages.
 
@@ -69,7 +69,7 @@ this use-package expression.  ℹ️ You will still need to select tools!
      :system
      "You are pair programming with the user in Emacs and on Emacs.
  
- Your job is to dive into Elisp code and understand the APIs and
+ Your job is to dive into Python code and understand the APIs and
  structure of elisp libraries and Emacs.  Use the provided tools to do
  so, but do not make duplicate tool calls for information already
  available in the chat.
