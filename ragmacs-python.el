@@ -188,7 +188,7 @@ Uses curl to fetch search results from DuckDuckGo."
    :name "web_search"
    :confirm t
    :include t
-   :category "web-introspection"
+   :category "python-introspection"
    :args '(( :name "query"
              :type string
              :description "A search query to look up on the web."))
@@ -204,7 +204,7 @@ related to Python programming concepts.")
    :name "fetch_url"
    :confirm t
    :include t
-   :category "web-introspection"
+   :category "python-introspection"
    :args '(( :name "url"
              :type string
              :description "A URL to fetch content from."))
@@ -219,7 +219,7 @@ when you have a direct link to documentation or a resource you want to examine."
    :name "search_python_docs"
    :confirm t
    :include t
-   :category "web-introspection"
+   :category "python-introspection"
    :args '(( :name "topic"
              :type string
              :description "A Python topic to search for in official documentation."))
@@ -235,7 +235,7 @@ need authoritative information about Python's standard library or language.")
    :name "search_pypi_package"
    :confirm t
    :include t
-   :category "web-introspection"
+   :category "python-introspection"
    :args '(( :name "package_name"
              :type string
              :description "Name of a Python package on PyPI."))
@@ -251,7 +251,7 @@ Python packages available on PyPI.")
    :name "search_stackoverflow"
    :confirm t
    :include t
-   :category "web-introspection"
+   :category "python-introspection"
    :args '(( :name "query"
              :type string
              :description "A query to search for on StackOverflow."))
@@ -266,7 +266,7 @@ solutions to Python problems.")
    :function #'ragmacs-python--get-python-version
    :name "get_python_version"
    :include t
-   :category "system-introspection"
+   :category "python-introspection"
    :args nil
    :description "Get the current Python version.
 This tool returns the version of Python installed on the system. Use this to
@@ -278,7 +278,7 @@ verify compatibility requirements or understand what features are available.")
    :function #'ragmacs-python--list-installed-packages
    :name "list_installed_packages"
    :include t
-   :category "system-introspection"
+   :category "python-introspection"
    :args nil
    :description "List installed Python packages.
 This tool returns a list of all Python packages installed in the current
@@ -290,7 +290,7 @@ environment using pip. Use this to see what libraries are available locally.")
    :function #'ragmacs-python--get-package-info
    :name "get_package_info"
    :include t
-   :category "system-introspection"
+   :category "python-introspection"
    :args '(( :name "package"
              :type string
              :description "Name of a Python package."))
